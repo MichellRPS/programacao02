@@ -1,5 +1,5 @@
-#container {
-    width: 960px;
+#layout {
+    width: 100%;
     margin: 0 auto;
     background-color: grey;
     text-align: center;
@@ -7,21 +7,24 @@
 #header {
     height: 100px;
 }
-#primary {
+#navigation {
+    height: 50px;
+}
+#left-column {
     float: left;
-    width: 240px;
+    width: 25%;
     height: 480px;
     background-color: red;
 }
 #content {
     float: left;
-    width: 480px;
+    width: 50%;
     height: 480px;
     background-color: green;
 }
-#secondary {
+#right-column {
     float: left;
-    width: 240px;
+    width: 25%;
     height: 480px;
     background-color: yellow;
 }
