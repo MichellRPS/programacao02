@@ -9,6 +9,7 @@
 }
 #navigation {
     height: 50px;
+    background-color: blue;
 }
 #left-column {
     float: left;
