@@ -1,0 +1,56 @@
+/* atividade 03 */
+.grid-container {
+    display: grid;
+    /* justify-content: space-between; */
+    height: 620px;
+    grid-template-columns: repeat(10, auto);
+    grid-gap: 10px;
+    background-color: #fff2cc;
+    padding: 10px;
+}
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.grid-item01 {
+    background-color: #00ccff;
+    grid-area: 1 / 1 / 6 / 3;
+}
+.grid-item02 {
+    background-color: #ffedb3;
+    grid-column: 3 / 9;
+}
+.grid-item03 {
+    background-color: #00ccff;
+    grid-area: 1 / 9 / 6 / 11;
+}
+.grid-item04 {
+    background-color: #ff9999;
+    grid-column: 3 / 6;
+}
+.grid-item05 {
+    background-color: #ff9999;
+    grid-column: 6 / 9;
+}
+.grid-item06 {
+    background-color: #ff9966;
+    grid-area: 3 / 3 / 6 / 5;
+    grid-column: 3 / 5;
+}
+.grid-item07 {
+    background-color: #ffe180;
+    grid-column: 5 / 9
+}
+.grid-item08 {
+    background-color: #ff9999;
+    grid-column: 5 / 7;
+}
+.grid-item09 {
+    background-color: #ff9999;
+    grid-column: 7 / 9;
+}
+.grid-item10 {
+    background-color: #ff99cc;
+    grid-column: 5 / 9;
+}
