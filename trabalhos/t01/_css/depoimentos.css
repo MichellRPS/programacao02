@@ -1,0 +1,97 @@
+/* estilo dos links do menu */
+a {
+    text-decoration: none;
+    color: deepskyblue;
+}
+/* estilo do container */
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #696969;
+}
+/* estilo do linha 1 - cabeçalho */
+.row1 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+/* estilo da coluna 1 do cabeçalho - logo da empresa e nome da página */
+.row1-col1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+}
+/* estilo do nome da página */
+.row1-col1 p {
+    padding-left: 15px;
+    color: #08B173;
+}
+/* estilo da coluna 2 do cabeçalho - menu */
+.row1-col2 {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: right;
+    column-gap: 15px;
+}
+/* estilo do texto dos links do menu */
+.row1-col2 p {
+    margin-top: 0;
+}
+/* estilo das imagens dos links do menu */
+.row1-col2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* estilo da linha 2 - conteúdo */
+/* estilo do artigo do conteúdo */
+.row2 article{
+    display: grid;
+    grid-template-rows: auto auto;
+    padding-bottom: 25px;
+}
+/* estilo da linha 1 do artigo - cabeçalho do artigo */
+.row2 article h3 {
+    text-align: center;
+    color: #08B173;
+    /* margin-bottom: 0; não é necessário */
+}
+/* estilo da linha 2 do artigo - conteúdo do artigo */
+.row2 article section {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+/* estilo da coluna 1 da linha 2 do artigo - vídeo do artigo */
+/* não é necessário
+.row2 article section iframe {
+    display: block;
+    margin-left: auto;
+}
+*/
+/* estilo da coluna 2 da linha 2 do artigo - texto do artigo */
+.row2 article section p {
+    text-align: justify;
+    text-indent: 25px;
+    padding-left: 25px;
+    margin-top: 0;
+}
+/* estilo da linha 3 - rodapé */
+/* estilo dos direitos autorais e Facebook da Intercode */
+.row3 {
+    margin-top: 25px;
+    font-size: smaller;
+    text-align: center;
+}
+/* estilo do link do Facebook */
+.row3 p a {
+    color: #696969;
+}
+/* estilo da imagem do Facebook */
+.row3 p img {
+    display: inline-block;
+    vertical-align: middle;
+}

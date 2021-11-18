@@ -1,0 +1,146 @@
+/* estilo dos links do menu */
+a {
+    text-decoration: none;
+    color: deepskyblue;
+}
+/* estilo do container */
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #696969;
+}
+/* estilo do linha 1 - cabeçalho */
+.row1 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+/* estilo da coluna 1 do cabeçalho - logo da empresa e nome da página */
+.row1-col1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+}
+/* estilo do nome da página */
+.row1-col1 p {
+    padding-left: 15px;
+    color: #08B173;
+}
+/* estilo da coluna 2 do cabeçalho - menu */
+.row1-col2 {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: right;
+    column-gap: 15px;
+}
+/* estilo do texto dos links do menu */
+.row1-col2 p {
+    margin-top: 0;
+}
+/* estilo das imagens dos links do menu */
+.row1-col2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* estilo da linha 2 - conteúdo */
+.row2 {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+/* estilo da linha 1 do conteúdo - título e texto */
+/* estilo do título */
+.row2-1 h1 {
+    font-size: xx-large;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* estilo da linha 2 do conteúdo - contatos e formulário */
+.row2-2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 300px;
+}
+/* estilo da coluna 1 da linha 2 do conteúdo - lista de contatos */
+.row2-2 ul {
+    padding-left: 0;
+    margin-top: 0;
+}
+/* estilo dos marcadores da lista de contatos */
+.row2-2 li {
+    list-style-type: none;
+}
+/* estilo dos nomes dos contatos da lista de contatos */
+.row2-2 li h3 {
+    margin-top: 0;
+    margin-bottom: 1px;
+    font-weight: 600;
+}
+/* estilo dos elementos da lista de contatos */
+.last-li {
+    margin-bottom: 25px;
+}
+/* estilo da coluna 2 da linha 2 do conteúdo - formulário */
+/* estilo dos campos de texto do formulário */
+.row2-2 form input[type="text"] {
+    width:500px;
+    padding:10px;
+    border:1px solid #696969;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 25px;
+}
+/* estilo do campo de email do formulário */
+.row2-2 form input[type="email"] {
+    width:500px;
+    padding:10px;
+    border:1px solid #696969;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 25px;
+}
+/* estilo da área de texto do formulário */
+.row2-2 form textarea {
+    width:500px;
+    height: 100px;
+    padding:10px;
+    border:1px solid #696969;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 25px;
+    max-width: 600px;
+    max-height: 200px;
+}
+/* estilo do botão enviar do formulário */
+.row2-2 form input[type="submit"] {
+    display: block;
+    height: 50px;
+    padding:10px 20px;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    border-color: #007bff;
+    background-color: #007bff;
+    outline: none;
+    cursor: pointer;
+    font-size: medium;
+}
+/* estilo da linha 3 - rodapé */
+/* estilo dos direitos autorais e Facebook da Intercode */
+.row3 {
+    margin-top: 25px;
+    font-size: smaller;
+    text-align: center;
+}
+/* estilo do link do Facebook */
+.row3 p a {
+    color: #696969;
+}
+/* estilo da imagem do Facebook */
+.row3 p img {
+    display: inline-block;
+    vertical-align: middle;
+}
