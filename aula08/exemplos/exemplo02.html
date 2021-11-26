@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 08 - Exemplo 02</title>
+    <script type="text/javascript" src="scripts/script02.js"></script>
+</head>
+<body>
+    <form name="valida">
+        <table>
+            <tr>
+                <td>
+                    Nome:
+                </td>
+                <td>
+                    <input type="text" name="nome">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" name="botao" onclick="valida_campo()" value="Enviar">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br><br><br>
+    <form name="cadastro" method="post">
+        Nome:
+        <input type="text" name="nome"><br /><br />
+        Email:
+        <input type="email" name="email"><br /><br />
+        Senha:
+        <input type="password" name="senha"><br /><br />
+        Confirmar senha:
+        <input type="password" name="confirmar"><br /><br />
+        <!-- submit limpa todos os campos após envio do formulário -->
+        <input type="submit" onclick="return valida_campos()" value="Cadastrar">
+    </form>
+</body>
+</html>
