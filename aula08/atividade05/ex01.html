@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jquery -->
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <title>P2 - Atividade 05 - Exercício 01</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <h2>Vamos validar um formulário</h2>
+    <form name="formulario">
+        <!-- dados pessoais -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <table cellspacing="10">
+                <tr>
+                    <td><label for="nome">Nome:</label></td>
+                    <td><input type="text" name="nome"></td>
+                    <td><label for="sobrenome">Sobrenome:</label></td>
+                    <td><input type="text" name="sobrenome"></td>
+                </tr>
+                <tr>
+                    <td><label>Nascimento:</label></td>
+                    <td><input type="date" name="data_nascimento"></td>
+                </tr>
+                <tr>
+                    <td><label for="rg">RG:</label></td>
+                    <td><input type="text" name="rg" size="15" maxlength="15"></td>
+                </tr>
+                <tr>
+                    <td><label>CPF:</label></td>
+                    <td><input type="text" name="cpf" size="14" maxlength="14"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <!-- dados de endereço -->
+        <fieldset>
+            <legend>Dados de Endereço</legend>
+            <table cellspacing="10">
+                <tr>
+                    <td><label for="cep">CEP:</label></td>
+                    <td>
+                        <input type="text" name="cep" size="10" maxlength="10">
+                        <button id="pesquisar">Pesquisar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="rua">Rua:</label></td>
+                    <td><input type="text" name="rua"></td>
+                    <td><label for="numero">Número:</label></td>
+                    <td><input type="text" name="numero" size="4"></td>
+                </tr>
+                <tr>
+                    <td><label for="bairro">Bairro:</label></td>
+                    <td><input type="text" name="bairro"></td>
+                </tr>
+                <tr>
+                    <td><label for="estado">Estado:</label></td>
+                    <td>
+                        <select name="estado">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="default" selected>Selecionar</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="cidade">Cidade:</label></td>
+                    <td><input type="text" name="cidade"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <!-- dados de login -->
+        <fieldset>
+            <legend>Dados de login</legend>
+            <table cellspacing="10">
+                <tr>
+                    <td><label for="email">E-mail:</label></td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="imagem">Imagem de perfil:</label></td>
+                    <td><input type="file" name="imagem" accept = "image/jpeg, image/png"></td>
+                </tr>
+                <tr>
+                    <td><label for="login">Login de usuário:</label></td>
+                    <td><input type="text" name="login"></td>
+                </tr>
+                <tr>
+                    <td><label for="senha">Senha:</label></td>
+                    <td><input type="password" name="senha"></td>
+                </tr>
+                <tr>
+                    <td><label for="confirmacao">Confirme sua senha:</label></td>
+                    <td><input type="password" name="confirmacao"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <input id="enviar" type="submit">
+        <input type="reset" value="Limpar">
+    </form>
+    <!-- script -->
+    <script src="scripts/ex01.js"></script>
+</body>
+</html>
